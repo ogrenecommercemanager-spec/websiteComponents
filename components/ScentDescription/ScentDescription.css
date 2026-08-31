@@ -1,0 +1,152 @@
+.ListingSidePanel{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100%;
+    width: 400px;
+    background-color: #FFFDF9;
+    z-index: 102;
+    transition: transform 0.2s ease;
+}
+
+.ListingSidePanel.Active{
+    transform: translateX(-400px);
+}
+
+.ListingSidePanelCloseBtn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    font-weight: lighter;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    padding: 0px 15px;
+    margin: 15px 340px;
+}
+
+.ListingSidePanelCloseBtn:hover{
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+#scentProfileTop{
+    padding: 20px 20px;
+    background-color: var(--green-primary);
+    width: 100%;
+}
+
+#listingCardScentProfile{
+    color: var(--green-tertiary);
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.6rem;
+}
+
+#ScentProfileName{
+    margin: 0;
+    color: var(--green-quaternary);
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+#scentProfileBottom{
+    padding: 0px 20px;
+}
+
+#scentProfileBoxContiner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    gap: 2% 2%;
+}
+.scentProfileBox{
+    background-color: var(--green-quaternary);
+    border: 1px solid #D4EAB8;
+    border-radius: 15px;
+    padding: 0px 10px;
+    width: 49%;
+    margin-bottom: 2%;
+}
+
+.scentBoxLabel{
+    color: #7EBD8E;
+    font-size: 0.5rem;
+    font-weight: 1000;
+    margin: 5px 5px;
+}
+
+.scentBoxValue{
+    color: var(--green-secondary);
+    font-size: 0.6rem;
+    margin: 5px 5px;
+}
+
+#scentProfileDesc{
+    color: var(--green-secondary);
+    font-size: 0.7rem;
+    margin: 0;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#scentProfileAddToCart{
+    background-color: var(--green-primary);
+    border: transparent;
+    border-radius: 15px;
+    height: 45px;
+    width: 100%;
+    font-size: 0.7rem;
+    margin: 20px 0px;
+    color: var(--green-quaternary);
+    font-weight: 900;
+    transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+#scentProfileAddToCart:hover{
+    background-color: var(--green-secondary);
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 1000px) {
+    .ListingSidePanel{
+        width: 100%;
+        right: -100%;
+    }
+
+    .ListingSidePanel.Active{
+        transform: translateX(-100%);
+    }
+
+    .ListingSidePanelCloseBtn{
+        right: -315px;
+        top: 10px;
+    }
+
+    #scentProfileDesc{
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .ListingSidePanel{
+        top: 100%;
+        height: 80vh;
+        left: 0;
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    .ListingSidePanel.Active{
+        transform: translateY(-80vh);
+    }
+
+    #scentProfileTop{
+        border-radius: 40px 40px 0px 0px;
+    }
+
+    #scentProfileDesc{
+        max-height: 170px;
+    }
+}

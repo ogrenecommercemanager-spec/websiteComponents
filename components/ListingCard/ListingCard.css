@@ -1,0 +1,142 @@
+.ListingCard {
+    margin: auto;
+    margin-bottom: 40px;
+    width : 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue-primary);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--blue-tertiary);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ListingCard:hover{
+    box-shadow: 0 2px 16px rgba(13, 43, 78, 0.10);
+    transform: translateY(-3px);
+}
+
+#ListingCardUpper{
+    height: 50%;
+}
+
+.candleCardImage{
+    width: 100%;
+    aspect-ratio: 9/11;
+}
+
+.ListingCardTags {
+    display: flex;
+    height: 20px;
+    width: 80%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    padding: 10px 10px;
+}
+
+.ListingCardCollectionTag, .ListingCardOnSaleTag{
+    padding: 2px 10px;
+    color: var(--blue-tertiary);
+    background-color: var(--blue-secondary);
+    border: 1px solid var(--blue-secondary);
+    border-radius: 100px;
+}
+
+.ListingCardCollectionTag {
+    text-transform: capitalize;
+}
+
+.ListingCardDetails {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue-secondary);
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.CandleCardButtons{
+    background-color: transparent;
+}
+
+.ListingCardName, .ListingCardPrice{
+    margin: 0;
+    padding: 0px 10px;
+    font-size: 0.7 rem;
+    width: 100%;
+    color: #1C4E7A;
+}
+
+.CandleCardButtons{
+    padding: 0px 0px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    height: 80px;
+    font-size: 0.6rem;
+}
+
+.ListingCardInfoBtn{
+    border: 1px solid #AECFE8;
+    color: #1C4E7A;
+    background-color: #E3F0FB;
+    border-radius: 15px;
+    flex-basis: 33%;
+    transition: background-color 0.1s ease, border 0.1s ease;
+    
+}
+
+.ListingCardInfoBtn:hover{
+    border: 1px solid var(--blue-tertiary);
+    background-color: #B8DDEF;
+}
+
+.ListingCardBuyBtn {
+    background-color: var(--blue-secondary);
+    border: 1px solid var(--blue-secondary);
+    color: var(--blue-quaternary);
+    flex-basis: 67%;
+    border-radius: 15px;
+    font-size: 0.6rem;
+    transition: transform 0.1s ease, background-color 0.1s ease, border 0.1s ease;;
+}
+
+.ListingCardBuyBtn:hover{
+    background-color: var(--blue-secondary-darker);
+    border: 1px solid var(--blue-secondary-darker);
+    transform: translateY(-1px);   
+}
+
+.ListingSidePanelCloseBtn{
+    background-color: transparent;
+    font-size: 1.8rem;
+    border: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .ListingCard {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ListingCard {
+        width: 80%;
+    }
+}
+
+#listingCardScentProfile{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+

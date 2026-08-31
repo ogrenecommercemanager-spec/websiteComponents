@@ -1,0 +1,212 @@
+.navBar {
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: var(--green-primary);
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    top: 0;
+    left: 0;
+}
+
+#navDrawerContainer{
+    display: flex;
+    gap: 6px;
+}
+
+.navBtn {  
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #7EBD8E;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.18s ease, background-color 0.18s ease;
+}
+
+.navBtn:hover{
+    color: var(--green-quaternary);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#checkoutBtnContainer{
+    position: absolute;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#checkoutBtn{
+    font-size: 15px;
+    font-weight: 500;
+    color: #1A3D0A;
+    background-color: var(--green-tertiary);
+    padding: 10px 22px;
+    display: inline-flex;
+    border-radius: 20px;
+    transition: transform 0.12s ease;
+}
+
+#checkoutBtnContainer:hover{
+    transform: translateY(-1px);
+}
+
+#checkoutBtnContainer:hover #checkoutBtn{
+    background-color: #C3E88A;
+}
+
+#checkoutBtnContainer:hover #checkoutCartCounter{
+    border: 1px solid #C3E88A;
+}
+
+#checkoutCartCounter{
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #1A3D0A;
+    background-color: var(--green-primary);
+    border: 1px solid var(--green-tertiary);
+    font-size: 18px;
+    border-radius: 100px;
+    line-height: 1;
+    padding: 2px 5px;
+}
+
+#navHamburger{
+    position: absolute;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+    background-color: transparent;
+}
+
+
+#navHamburger span{
+    width: 24px;
+    height: 2px;
+    background-color: var(--green-quaternary);
+    border-radius: 2px;
+    transition: transform 0.22s, opacity 0.22s ease;
+}
+
+#navHamburger.Active span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+}
+
+#navHamburger.Active span:nth-child(2){
+    opacity: 0;
+}
+
+#navHamburger.Active span:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+#navUserName{
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    font-weight: 900;
+}
+
+#userGreeting{
+    margin: 0px;
+    font-size: 0.6rem;
+    color: #7EBD8E;
+}
+
+#userDisplayName{
+    margin: 0px;
+    color: var(--green-quaternary);
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width:700px) {
+    #navHamburger {
+        display: flex;
+    }
+
+    #navDrawerContainer{
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: -350px;
+        background-color: var(--green-secondary);
+        padding: 12px 20px 0px;
+        padding-bottom: 75px;
+        transition: transform 0.2s ease;
+        z-index: 101;
+    }
+
+    .navBtn{
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        padding: 12px 8px;
+    }
+
+    .navBtn:hover{
+        background-color: transparent;
+    }
+
+    #checkoutBtnContainer{
+        top: -59px;
+        right: 0px;
+        width: 100vw;
+        display: flex;   
+        transition: transform 0.2s ease; 
+        z-index: 99;    
+        z-index: 101;
+    }
+
+    #checkoutBtn{
+        padding: 10px 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #checkoutCartCounter{
+        right: 50px;
+    }
+
+    #navDrawerContainer.Active{
+        transform: translateY(420px);
+    }
+
+    #checkoutBtnContainer.Active{
+        transform: translateY(420px);
+    }
+
+    #checkoutBtnContainer:hover{
+        transform: translateY(419px);
+    }
+
+    #userDisplayName{
+        max-width: 200px;
+        overflow: visible;
+    }
+    
+
+    
+}
+
+@media screen and (min-width: 701px) {
+        #navHamburger {
+        display: none;
+    }
+}

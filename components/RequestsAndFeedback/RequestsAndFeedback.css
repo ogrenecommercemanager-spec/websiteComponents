@@ -1,0 +1,132 @@
+#requestsFeedbackContainer{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #091D33;
+    font-size: 0.6rem;
+    padding: 50px 40px;
+    font-weight: 900;
+}
+
+#requestsBox{
+    background-color: var(--blue-secondary);
+    border: 1px solid rgba(90,174,220,0.25);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#RequestsHeaders{
+    color: var(--blue-quaternary);
+    font-size: 1.6rem;
+    padding: 0;
+    margin-bottom: 30px;
+    justify-self: center;
+}
+
+#requestsFeedbackContainer input, #requestsFeedbackContainer textarea{
+    border: 1.5px solid rgba(90,174,220,0.25);
+    height: 45px;
+    border-radius: 10px;
+    background-color: #1C4E7A;
+    padding: 8px 8px;
+    color: var(--blue-quaternary);
+}
+
+#requestsFeedbackContainer textarea{
+    width: 100%;
+    min-height: 60px;
+    resize: none;
+    white-space: normal;
+}
+
+#requestsFeedbackContainer label{
+    color: var(--blue-tertiary);
+}
+
+#requestsUpperBox{
+    display: flex;
+    height: 80px;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+#nameBox, #phoneBox{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.textBoxDiv {
+    width: 100%;
+}
+
+#name, #phone, #email {
+    height: 50px;
+}
+
+#email, #comments{
+    width: 100%;
+}
+
+#comments{
+    height: 100px;
+}
+
+.textBox {
+    background-color: #68707d;
+    border-color:black;
+    border-radius: 5px;
+}
+.requestsTextBoxDiv::placeholder{
+    color: #5A7A96;
+    padding: 0px 8px;
+    font-size: 0.6rem;
+}
+
+#submitComment{
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #091D33;
+    background-color: var(--blue-tertiary);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#submitComment:hover{
+    background-color: var(--blue-muted);
+    transform: translateY(-1px);
+}
+
+@media screen and (max-width: 1000px) {
+
+    #requestsBox{
+        width: 100%;
+    }
+
+    #requestsUpperBox{
+        flex-direction: column;
+        padding-bottom: 170px;
+        gap: 0px;
+    }
+
+    #nameBox, #phoneBox{
+        width: 100%;
+    }
+
+    #nameBox{
+        margin-bottom: 20px;
+
+    }
+}

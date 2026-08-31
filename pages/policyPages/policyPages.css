@@ -1,0 +1,51 @@
+.policyPageText{
+    text-align: center;
+    padding: 70px 0px;
+    background-color: var(--blue-primary);
+    font-weight: 900;
+    color: #2A4A6A;  
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+
+p{
+    line-height: 1.6;
+}
+
+.policyPageContainers {
+    background-color: white;
+    border: 1px solid #AECFE8;
+    width: 70%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.policyPageContainers p{
+    padding: 20px;
+}
+
+.policyPageSubtitle{
+    background-color: #1C4E7A;
+    color: var(--blue-quaternary);
+}
+
+.policyPageHeroBanner{
+    margin: 0;
+    padding: 30px 30px;
+    color: var(--blue-quaternary);
+    font-size: 1.5rem;
+    background-color: var(--blue-secondary);
+    margin-bottom: 30px;
+}
+
+.policyPageSubtitle{
+    margin: 0;
+    padding: 15px 15px;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 1.1rem;
+}
+
+.policyPageP{
+    font-size: 0.8rem;
+}

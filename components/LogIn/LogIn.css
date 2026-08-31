@@ -1,0 +1,165 @@
+/* LogIn.css */
+
+.logInOutContainer{
+    background-color: var(--blue-primary);
+}
+
+.logInOutTopOfPage{
+    background-color: var(--blue-secondary);
+    height: 1px;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.logInOutTitleContainer{
+    background-color: var(--blue-secondary);
+    padding-top: 69px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logInOutTitleContainer h2{
+    color: var(--blue-quaternary);
+    margin: 0;
+}
+
+.logInOutSubtitle{
+    color: var(--blue-quaternary);
+    opacity: 0.7;
+    margin: 5px 0px 0px 0px;
+}
+
+.logInOutFormContainer{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: var(--blue-primary);
+}
+
+.inputTitle{
+    margin: 0;
+    padding: 15px 0px 5px 0px;
+    font-size: 0.9rem;
+    color: #1C4E7A;
+}
+
+.LogInInput{
+    background-color: #E3F0FB;
+    border: 1px solid #AECFE8;
+    width: 100%;
+    padding: 15px 0px 15px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #1C4E7A;
+}
+
+.LogInInput::placeholder{
+    color: #7FA9C9;
+}
+
+#logInError{
+    color: #B23A48;
+    font-size: 0.85rem;
+    margin: 15px 0px 0px 0px;
+}
+
+#resendVerificationBtn{
+    border: 1px solid var(--blue-secondary);
+    background-color: transparent;
+    color: var(--blue-secondary);
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    align-self: flex-start;
+}
+
+#logInResendMessage{
+    font-size: 0.85rem;
+    color: #1C4E7A;
+    opacity: 0.7;
+    margin: 8px 0px 0px 0px;
+}
+
+#logInBtn{
+    border: none;
+    width: 100%;
+    background-color: var(--blue-secondary);
+    color: var(--blue-quaternary);
+    padding: 17px 0px;
+    border-radius: 15px;
+    margin-top: 30px;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+#logInBtn:hover{
+    background-color: var(--blue-secondary-darker);
+    transform: translateY(-1px);
+}
+
+#logInOrDivider{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+#logInOrDivider span{
+    flex: 1;
+    height: 1px;
+    background-color: var(--blue-tertiary);
+    opacity: 0.5;
+}
+
+#logInOrDivider p{
+    margin: 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    color: #1C4E7A;
+}
+
+.logInOutGoogleBtn{
+    border: 1px solid #AECFE8;
+    background-color: #E3F0FB;
+    color: #1C4E7A;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.logInOutGoogleBtn:hover{
+    background-color: #B8DDEF;
+}
+
+#logInSignUpPrompt{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #1C4E7A;
+}
+
+#logInSignUpLink{
+    color: var(--blue-secondary);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    .logInOutFormContainer{
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .logInOutGoogleBtn, #logInBtn{
+        width: 100%;
+    }
+}

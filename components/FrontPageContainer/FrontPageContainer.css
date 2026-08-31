@@ -1,0 +1,51 @@
+#topOfPageContainer {
+    padding: 20px 20px;
+    padding-top: 90px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blue-secondary);
+    font-weight: 900;
+    gap: 10px;
+    }
+
+#frontPageLogo {
+    margin: 0;
+    border-radius: 50px;
+    border: 10px solid rgba(90,174,220,0.3);
+}
+
+#frontPageSpan{
+    border-radius: 60px;
+    display: flex;
+    border: 10px solid rgba(90,174,220,0.12);
+    margin-bottom: 20px;
+}
+
+#subLogo{
+    font-size: 0.6rem;
+    color: var(--blue-quaternary);
+    margin: 0;
+}
+
+#slogan{
+    color: var(--blue-quaternary);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+#donationSlogan{
+    color: #B8DDEF;
+    font-size: 0.7rem;
+    border: 1px solid rgba(90,174,220,0.25);
+    padding: 10px 35px;
+    background-color: rgba(90,174,220,0.12);
+    border-radius: 30px;
+}
+
+#brandName{
+    color: var(--blue-quaternary);
+    font-size: 1.1rem;
+    margin: 0;
+}

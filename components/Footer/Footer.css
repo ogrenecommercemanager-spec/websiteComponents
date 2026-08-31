@@ -1,0 +1,122 @@
+.footer{
+    background-color: var(--green-secondary);
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    border-top: 2px solid var(--green-tertiary);
+    flex-wrap: wrap;
+}
+
+.footerSection{
+    font-size: 0.7rem;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.footer div{
+    width: 25%;
+}
+
+.footerText{
+    color: var(--green-fifth);
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 7px 0px;
+}
+
+.footerText:hover{
+    color: var(--green-quaternary);
+}
+
+.footer .footerTitle{
+    color: var(--green-tertiary);
+}
+
+#a:hover, #b:hover, #c:hover, #d:hover{
+    color: var(--green-quaternary);
+}
+
+#footerTitle{
+    color: var(--green-quaternary);
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 15px 0px;
+    margin: 0;
+}
+
+#footerDesc img{
+    width: 100px;
+    border: 2px solid var(--green-tertiary);
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+#footerDesc .footerText:hover{
+    color: var(--green-fifth)
+}
+
+.footerSection{
+    text-align: center;
+    width: 33%;
+}
+
+#instagramLogo{
+    height: 50px;
+    width: 50px;
+}
+
+#footerFooter{
+    background-color: #0D2B12;
+    width: 100%;
+    padding: 15px 20px;
+    color: var(--green-fifth);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footerFooter p{
+    font-size: 0.6rem;
+    margin: 5px 0px;
+}
+
+#footerFooterLinks{
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .footer div{
+    width: 50%;
+    }
+
+    #footerDesc img{
+        align-self: flex-start;
+    }
+
+    #footerFooter{
+        flex-direction: column;
+    }
+
+    #footerFooterLinks{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div{
+        width: 100%;
+    }
+}
